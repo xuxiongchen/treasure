@@ -916,7 +916,7 @@ public class DaoHelper {
 		}
 		// import
 		str.append("import java.util.*;\n");
-		str.append("import com.cxdb.common.reflection.annotations.*;\n\n");
+		str.append("import com.cxdb.reflect.annotations.*;\n\n");
 		// class
 
 		str.append("/* " + table.getRemarks() + " */\n");
