@@ -1,0 +1,48 @@
+package <package>;
+
+import java.util.List;
+import java.util.Map;
+import <package.entity> ;
+
+
+/**
+ * 
+ * @author <autor>
+ *
+ */
+public interface <className> {
+	
+	/**
+	 * @author <autor>
+	 * @param <attribute>
+	 */
+	void saveEntity(<entity>...<attribute>);
+
+	/**
+	 * @param <attribute>
+	 * @author <autor>
+	 */
+	void updateEntity(<entity>...<attribute>);
+
+	/**
+	 * @param <attribute>
+	 * @author <autor>
+	 * @return
+	 */
+	List<Map> queryByParams(<entity> <attribute>);
+
+
+	/**
+	 * @param id ID
+	 * @author <autor>
+	 * @return
+	 */
+	<entity> queryByID(String id);
+	
+	/**
+	 * @param id ID
+	 * @author <autor>
+	 */
+	void deleteEntity(String...id);
+	
+}
