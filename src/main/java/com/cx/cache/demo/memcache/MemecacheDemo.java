@@ -34,8 +34,8 @@ public class MemecacheDemo {
 	
 	/**
 	 * 
-	 *   示范如何使用redis缓存验证码 
-	 * */
+	 *   示范如何使用memecache缓存验证码 	
+ 	 * */
 	public void saveValidateCode(String account, String validateCode) {
 		
 		long expiry=System.currentTimeMillis()+CacheConstants.MEMECHACE_CACHE_SECONDS_VALIDATECODE;
