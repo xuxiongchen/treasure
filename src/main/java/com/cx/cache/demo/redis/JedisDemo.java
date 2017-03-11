@@ -1,11 +1,12 @@
-package com.cx.cache.redis.demo;
+package com.cx.cache.demo.redis;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.cx.cache.redis.CacheConstants;
+
 import com.cx.cache.redis.JedisCache;
 import com.cx.cache.redis.assist.Config_JedisCache;
+import com.cx.common.CacheConstants;
 import com.cx.common.ErrorCode;
 import com.cx.common.exception.ServiceException;
 
@@ -25,6 +26,7 @@ public class JedisDemo {
 
 		cache = new JedisCache(jedisCacheConfig);
 		
+		//使用时一般在AppContext中创建，创建一次供全局使用
 	}
 	
 	/**

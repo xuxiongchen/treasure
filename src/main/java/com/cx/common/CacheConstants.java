@@ -1,15 +1,18 @@
-package com.cx.cache.redis;
+package com.cx.common;
 
 /**
  * redis缓存配置
  * @author chenxu
  *
  */
-public class CacheConstants {
+public interface CacheConstants {
 	// validateCode(redis 30分钟)
 	public static final String REDIS_CACHE_KEY_VALIDATECODE = "VALIDATECODE#";
 	public static final int REDIS_CACHE_SECONDS_VALIDATECODE = 30 * 60;
 
+	public static final String MEMECHACE_CACHE_KEY_VALIDATECODE = "VALIDATECODE#";
+	public static final int MEMECHACE_CACHE_SECONDS_VALIDATECODE = 30 * 60 * 100;
+	
 	// sessionid(redis2个小时)
 	public static final String REDIS_CACHE_KEY_GUIDE_SESSIONID = "GUIDE_SESSIONID#";
 	public static final int REDIS_CACHE_SECONDS_GUIDE_SESSIONID = 2 * 60 * 60;
@@ -19,8 +22,8 @@ public class CacheConstants {
 	public static final int REDIS_CACHE_SECONDS_CUSTOMER_SESSIONID = 2 * 60 * 60;
 
 	// SupportedServiceAreas(JVM2分钟)
-	public static final String JVM_CACHE_KEY_SUPPORTEDSERVICEAREAS = "SUPPORTEDSERVICEAREAS";
-	public static final int JVM_CACHE_MINS_SUPPORTEDSERVICEAREAS = 2;
+	public static final String JVM_CACHE_DICTIONARY_ENTITYS = "SUPPORTEDSERVICEAREAS";
+	public static final int JVM_CACHE_MIN_DICTIONARY_ENTITYS = 2;
 
 	// SupportedServiceArea_ENTITYS(JVM2分钟)
 	public static final String JVM_CACHE_KEY_SUPPORTEDSERVICEAREA_ENTITYS = "SUPPORTEDSERVICEAREA_ENTITYS";

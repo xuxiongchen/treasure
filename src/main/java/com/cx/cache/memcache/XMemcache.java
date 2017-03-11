@@ -52,6 +52,9 @@ public class XMemcache implements ICache {
 		return result;
 	}
 
+	/**
+	 * 与redis不同的是，
+	 */
 	@Override
 	public boolean add(String key, Object value, Date expiry) {
 		boolean result = false;

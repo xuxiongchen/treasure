@@ -1,13 +1,13 @@
-package com.cx.cache.redis.demo;
+package com.cx.cache.demo.redis;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.cx.cache.redis.CacheConstants;
+import com.cx.common.CacheConstants;
 import com.cx.common.ErrorCode;
 import com.cx.common.exception.ServiceException;
 
 /**
- * 使用例子
+ * 使用例子 缓存sessionid
  * @author chenxu
  *
  */
