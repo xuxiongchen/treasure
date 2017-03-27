@@ -14,7 +14,7 @@ import com.cx.common.ErrorCode;
 import com.cx.common.exception.ServiceException;
 
 /**
- * jedis使用DEMO
+ * Memecache使用DEMO
  * 
  */
 public class MemecacheDemo {
@@ -24,7 +24,7 @@ public class MemecacheDemo {
 			throws Exception {
 		// 初始化
 		String memcacheServers = "127.0.0.1:12000 192.168.1.3:12000";
-		//需要开启redis 服务
+		//需要开启Memecache 服务
 		Config_XMemcache memcacheCacheConfig = new Config_XMemcache(memcacheServers, null, null);
 
 		cache = new XMemcache(memcacheCacheConfig);
